@@ -36,10 +36,9 @@
 
 \begin{table}[H]
 	\begin{center}
+		\caption{Ιδιότητες του \textit{Board}.}
+		\label{tab:board1}
 		\begin{tabular}{ | c | c | c| m{5.5cm} | }
-			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Ιδιότητες}}\\
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -52,8 +51,15 @@
 			\hline
 			op\_volt & FLOAT & 1..1 &  Η τάση λειτουργίας της συσκευής \\
 			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Συσχετίσεις}}\\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}[H]
+	\begin{center}
+		\caption{Συσχετίσεις του \textit{Board}.}
+		\label{tab:board2}
+		\begin{tabular}{ | c | c | c| m{5.5cm} | }
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -71,14 +77,12 @@
 			BLUETOOTH & Composition-Σύνθεση & 0..1 &  Υποστήριξη bluetooth \\
 			\hline
 		\end{tabular}
-		\caption{Ιδιότητες και Συσχετίσεις του \textit{Board}.}
-		\label{tab:board}
 	\end{center}
 \end{table}
 
 \subsubsection*{Περιορισμοί}
 
-\noindent Το riot\_name μπορεί να πάρει τιμές σαν ID, με επιπλέον επιλογή να περιλαμβάνει και παύλες. Αυτό επιτυγχάνεται σύμφωνα με το NEW\_ID που είναι μια \textit{κανονική έκφραση} (\textit{regex}).
+\noindent Το riot\_name μπορεί να πάρει τιμές σαν ID, με επιπλέον επιλογή να περιλαμβάνει και παύλες. Αυτό γίνεται μέσω του NEW\_ID που είναι μια \textit{κανονική έκφραση}.
 
 \subsection{Peripheral}
 \label{subsec:peripheral}
@@ -91,10 +95,9 @@
 
 \begin{table}[H]
 	\begin{center}
+		\caption{Ιδιότητες του \textit{Peripheral}.}
+		\label{tab:peripheral1}
 		\begin{tabular}{ | c | c | c| m{5.5cm} | }
-			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Ιδιότητες}}\\
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -109,8 +112,15 @@
 			\hline
 			op\_volt & FLOAT & 1..1 &  Η τάση λειτουργίας της συσκευής \\
 			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Συσχετίσεις}}\\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}[H]
+	\begin{center}
+		\caption{Συσχετίσεις του \textit{Peripheral}.}
+		\label{tab:peripheral2}
+		\begin{tabular}{ | c | c | c| m{5.5cm} | }
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -120,14 +130,12 @@
 			PIN & Composition-Σύνθεση & 1..1 &  Οι ακροδέκτες της συσκευής \\
 			\hline
 		\end{tabular}
-		\caption{Ιδιότητες και Συσχετίσεις του \textit{Peripheral}.}
-		\label{tab:peripheral}
 	\end{center}
 \end{table}
 
 \subsubsection*{Περιορισμοί}
 
-\noindent - Το riot\_name μπορεί να πάρει τιμές σαν ID, με επιπλέον επιλογή να περιλαμβάνει και παύλες. Αυτό επιτυγχάνεται σύμφωνα με το NEW\_ID που είναι μια \textit{κανονική έκφραση} (\textit{regex}).
+\noindent - Το riot\_name μπορεί να πάρει τιμές σαν ID, με επιπλέον επιλογή να περιλαμβάνει και παύλες. Αυτό γίνεται μέσω του NEW\_ID που είναι μια \textit{κανονική έκφραση}.
 
 \noindent - Επιλογές των υποστηριζόμενων τύπων περιφερειακών για το type:
 
@@ -147,10 +155,9 @@
 
 \begin{table}[H]
 	\begin{center}
+		\caption{Ιδιότητες του \textit{CPU}.}
+		\label{tab:cpu}
 		\begin{tabular}{ | c | c | c| m{5.5cm} | }
-			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Ιδιότητες}}\\
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -164,8 +171,6 @@
 			fpu & BOOL & 1..1 & Υποστήριξη πράξεων κινητής υποδιαστολής της κεντρικής μονάδας επεξεργασίας \\
 			\hline
 		\end{tabular}
-		\caption{Ιδιότητες του \textit{CPU}.}
-		\label{tab:cpu}
 	\end{center}
 \end{table}
 
@@ -214,10 +219,9 @@
 
 \begin{table}[H]
 	\begin{center}
+		\caption{Ιδιότητες του \textit{WIFI}.}
+		\label{tab:wifi1}
 		\begin{tabular}{ | c | c | c| m{5.5cm} | }
-			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Ιδιότητες}}\\
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -226,8 +230,15 @@
 			\hline
 			freq & NUMBER & 1..1 & Η συχνότητα λειτουργίας \\
 			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Συσχετίσεις}}\\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}[H]
+	\begin{center}
+		\caption{Συσχετίσεις του \textit{WIFI}.}
+		\label{tab:wifi2}
+		\begin{tabular}{ | c | c | c| m{5.5cm} | }
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -235,8 +246,6 @@
 			NETWORK & SuperType-Επέκταση & - &  Το στοιχείο WIFI επεκτείνει το στοιχείο NETWORK \\
 			\hline
 		\end{tabular}
-		\caption{Ιδιότητες και Συσχετίσεις του \textit{WIFI}.}
-		\label{tab:wifi}
 	\end{center}
 \end{table}
 
@@ -244,10 +253,10 @@
 
 \noindent Επιλογές των υποστηριζόμενων μονάδων μέτρησης για το freq:
 
-\begin{itemize}
+\begin{itemize}[itemsep=-4pt, topsep=-8pt]
 	\item hz
-	\item ghz
 	\item mhz
+	\item ghz
 \end{itemize}
 
 \subsection{ETHERNET}
@@ -261,18 +270,24 @@
 
 \begin{table}[H]
 	\begin{center}
+		\caption{Ιδιότητες του \textit{ETHERNET}.}
+		\label{tab:ethernet1}
 		\begin{tabular}{ | c | c | c| m{5.5cm} | }
-			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Ιδιότητες}}\\
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
 			\hline
 			name & ID & 1..1 & Το όνομα της δικτύωσης μέσω ethernet \\
 			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Συσχετίσεις}}\\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}[H]
+	\begin{center}
+		\caption{Συσχετίσεις του \textit{ETHERNET}.}
+		\label{tab:ethernet2}
+		\begin{tabular}{ | c | c | c| m{5.5cm} | }
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -280,8 +295,6 @@
 			NETWORK & SuperType-Επέκταση & - &  Το στοιχείο ETHERNET επεκτείνει το στοιχείο NETWORK \\
 			\hline
 		\end{tabular}
-		\caption{Ιδιότητες και Συσχετίσεις του \textit{ETHERNET}.}
-		\label{tab:ethernet}
 	\end{center}
 \end{table}
 
@@ -300,10 +313,9 @@
 
 \begin{table}[H]
 	\begin{center}
+		\caption{Ιδιότητες του \textit{MEMORY}.}
+		\label{tab:memory}
 		\begin{tabular}{ | c | c | c| m{5.5cm} | }
-			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Ιδιότητες}}\\
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -315,8 +327,6 @@
 			flash & FLOAT & 1..1 & Το μέγεθος της μνήμης FLASH \\
 			\hline
 		\end{tabular}
-		\caption{Ιδιότητες του \textit{MEMORY}.}
-		\label{tab:memory}
 	\end{center}
 \end{table}
 
@@ -344,10 +354,9 @@
 
 \begin{table}[H]
 	\begin{center}
+		\caption{Ιδιότητες του \textit{BLEUTOOTH}.}
+		\label{tab:bluetooth}
 		\begin{tabular}{ | c | c | c| m{5.5cm} | }
-			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Ιδιότητες}}\\
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -355,8 +364,6 @@
 			version & NUMBER & 1..1 & Η έκδοση του πρωτοκόλλου bluetooth \\
 			\hline
 		\end{tabular}
-		\caption{Ιδιότητες του \textit{BLEUTOOTH}.}
-		\label{tab:bluetooth}
 	\end{center}
 \end{table}
 
@@ -392,10 +399,9 @@
 
 \begin{table}[H]
 	\begin{center}
+		\caption{Ιδιότητες του \textit{POWER\_PIN}.}
+		\label{tab:power_pin1}
 		\begin{tabular}{ | c | c | c| m{5.5cm} | }
-			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Ιδιότητες}}\\
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -406,8 +412,15 @@
 			\hline
 			type & POWER\_TYPE (Enum) & 1..1 & Το είδος της τροφοδοσίας \\
 			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Συσχετίσεις}}\\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}[H]
+	\begin{center}
+		\caption{Συσχετίσεις του \textit{POWER\_PIN}.}
+		\label{tab:power_pin2}
+		\begin{tabular}{ | c | c | c| m{5.5cm} | }
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -415,8 +428,6 @@
 			PIN & SuperType-Επέκταση & - &  Το στοιχείο POWER\_PIN επεκτείνει το στοιχείο PIN \\
 			\hline
 		\end{tabular}
-		\caption{Ιδιότητες και Συσχετίσεις του \textit{POWER\_PIN}.}
-		\label{tab:power_pin}
 	\end{center}
 \end{table}
 
@@ -441,10 +452,9 @@
 
 \begin{table}[H]
 	\begin{center}
+		\caption{Ιδιότητες του \textit{INPUT\_PIN}.}
+		\label{tab:input_pin1}
 		\begin{tabular}{ | c | c | c| m{5.5cm} | }
-			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Ιδιότητες}}\\
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -455,8 +465,15 @@
 			\hline
 			vmax & NUMBER & 0..1 & Η μέγιστη τιμή τάσης που μπορεί να δεχτεί ο ακροδέκτης \\
 			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Συσχετίσεις}}\\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}[H]
+	\begin{center}
+		\caption{Συσχετίσεις του \textit{INPUT\_PIN}.}
+		\label{tab:input_pin2}
+		\begin{tabular}{ | c | c | c| m{5.5cm} | }
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -464,8 +481,6 @@
 			PIN & SuperType-Επέκταση & - &  Το στοιχείο INPUT\_PIN επεκτείνει το στοιχείο PIN \\
 			\hline
 		\end{tabular}
-		\caption{Ιδιότητες και Συσχετίσεις του \textit{INPUT\_PIN}.}
-		\label{tab:input_pin}
 	\end{center}
 \end{table}
 
@@ -484,10 +499,9 @@
 
 \begin{table}[H]
 	\begin{center}
+		\caption{Ιδιότητες του \textit{OUTPUT\_PIN}.}
+		\label{tab:output_pin1}
 		\begin{tabular}{ | c | c | c| m{5.5cm} | }
-			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Ιδιότητες}}\\
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -498,8 +512,15 @@
 			\hline
 			vmax & NUMBER & 0..1 & Η μέγιστη τιμή τάσης που μπορεί να δεχτεί ο ακροδέκτης \\
 			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Συσχετίσεις}}\\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}[H]
+	\begin{center}
+		\caption{Συσχετίσεις του \textit{OUTPUT\_PIN}.}
+		\label{tab:output_pin2}
+		\begin{tabular}{ | c | c | c| m{5.5cm} | }
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -507,8 +528,6 @@
 			PIN & SuperType-Επέκταση & - &  Το στοιχείο OUTPUT\_PIN επεκτείνει το στοιχείο PIN \\
 			\hline
 		\end{tabular}
-		\caption{Ιδιότητες και Συσχετίσεις του \textit{OUTPUT\_PIN}.}
-		\label{tab:output_pin}
 	\end{center}
 \end{table}
 
@@ -527,10 +546,9 @@
 
 \begin{table}[H]
 	\begin{center}
+		\caption{Ιδιότητες του \textit{IO\_PIN}.}
+		\label{tab:io_pin1}
 		\begin{tabular}{ | c | c | c| m{5.5cm} | }
-			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Ιδιότητες}}\\
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -539,10 +557,17 @@
 			\hline
 			number & INT & 1..1 & Ο αριθμός του ακροδέκτη (όσον αφορά την θέση του στη συσκευή) \\
 			\hline
-			vmax & POWER\_TYPE (Enum) & 0..1 & Η μέγιστη τιμή τάσης που μπορεί να δεχτεί ο ακροδέκτης \\
+			vmax & NUMBER & 0..1 & Η μέγιστη τιμή τάσης που μπορεί να δεχτεί ο ακροδέκτης \\
 			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Συσχετίσεις}}\\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}[H]
+	\begin{center}
+		\caption{Συσχετίσεις του \textit{IO\_PIN}.}
+		\label{tab:io_pin2}
+		\begin{tabular}{ | c | c | c| m{5.5cm} | }
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -552,8 +577,6 @@
 			PIN\_FUNC & Composition-Σύνθεση & 0..* &  Το IO\_PIN μπορεί να έχει πολλές λειτουργίες \\
 			\hline
 		\end{tabular}
-		\caption{Ιδιότητες και Συσχετίσεις του \textit{IO\_PIN}.}
-		\label{tab:io_pin}
 	\end{center}
 \end{table}
 
@@ -587,18 +610,24 @@
 
 \begin{table}[H]
 	\begin{center}
+		\caption{Ιδιότητες του \textit{GPIO}.}
+		\label{tab:gpio1}
 		\begin{tabular}{ | c | c | c| m{5.5cm} | }
-			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Ιδιότητες}}\\
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
 			\hline
 			type & STRING & 1..1 & Το όνομα της διεπαφής GPIO \\
 			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Συσχετίσεις}}\\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}[H]
+	\begin{center}
+		\caption{Συσχετίσεις του \textit{GPIO}.}
+		\label{tab:gpio2}
+		\begin{tabular}{ | c | c | c| m{5.5cm} | }
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -606,8 +635,6 @@
 			PIN\_FUNC & SuperType-Επέκταση & - &  Το στοιχείο GPIO επεκτείνει το στοιχείο PIN\_FUNC \\
 			\hline
 		\end{tabular}
-		\caption{Ιδιότητες και Συσχετίσεις του \textit{GPIO}.}
-		\label{tab:gpio}
 	\end{center}
 \end{table}
 
@@ -626,10 +653,9 @@
 
 \begin{table}[H]
 	\begin{center}
+		\caption{Ιδιότητες του \textit{I2C}.}
+		\label{tab:i2c1}
 		\begin{tabular}{ | c | c | c| m{5.5cm} | }
-			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Ιδιότητες}}\\
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -638,8 +664,15 @@
 			\hline
 			bus & INT & 1..1 & Ο αριθμός περιγραφής του διαύλου \\
 			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Συσχετίσεις}}\\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}[H]
+	\begin{center}
+		\caption{Συσχετίσεις του \textit{I2C}.}
+		\label{tab:i2c2}
+		\begin{tabular}{ | c | c | c| m{5.5cm} | }
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -647,8 +680,6 @@
 			PIN\_FUNC & SuperType-Επέκταση & - &  Το στοιχείο I2C επεκτείνει το στοιχείο PIN\_FUNC \\
 			\hline
 		\end{tabular}
-		\caption{Ιδιότητες και Συσχετίσεις του \textit{I2C}.}
-		\label{tab:i2c}
 	\end{center}
 \end{table}
 
@@ -672,10 +703,9 @@
 
 \begin{table}[H]
 	\begin{center}
+		\caption{Ιδιότητες του \textit{SPI}.}
+		\label{tab:spi1}
 		\begin{tabular}{ | c | c | c| m{5.5cm} | }
-			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Ιδιότητες}}\\
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -684,8 +714,15 @@
 			\hline
 			bus & INT & 1..1 & Ο αριθμός περιγραφής του διαύλου \\
 			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Συσχετίσεις}}\\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}[H]
+	\begin{center}
+		\caption{Συσχετίσεις του \textit{SPI}.}
+		\label{tab:spi2}
+		\begin{tabular}{ | c | c | c| m{5.5cm} | }
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -693,8 +730,6 @@
 			PIN\_FUNC & SuperType-Επέκταση & - &  Το στοιχείο SPI επεκτείνει το στοιχείο PIN\_FUNC \\
 			\hline
 		\end{tabular}
-		\caption{Ιδιότητες και Συσχετίσεις του \textit{SPI}.}
-		\label{tab:spi}
 	\end{center}
 \end{table}
 
@@ -720,10 +755,9 @@
 
 \begin{table}[H]
 	\begin{center}
+		\caption{Ιδιότητες του \textit{UART}.}
+		\label{tab:uart1}
 		\begin{tabular}{ | c | c | c| m{5.5cm} | }
-			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Ιδιότητες}}\\
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -732,8 +766,15 @@
 			\hline
 			bus & INT & 1..1 & Ο αριθμός περιγραφής του διαύλου \\
 			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Συσχετίσεις}}\\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}[H]
+	\begin{center}
+		\caption{Συσχετίσεις του \textit{UART}.}
+		\label{tab:uart2}
+		\begin{tabular}{ | c | c | c| m{5.5cm} | }
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -741,8 +782,6 @@
 			PIN\_FUNC & SuperType-Επέκταση & - &  Το στοιχείο UART επεκτείνει το στοιχείο PIN\_FUNC \\
 			\hline
 		\end{tabular}
-		\caption{Ιδιότητες και Συσχετίσεις του \textit{UART}.}
-		\label{tab:uart}
 	\end{center}
 \end{table}
 
@@ -766,10 +805,9 @@
 
 \begin{table}[H]
 	\begin{center}
+		\caption{Ιδιότητες του \textit{PWM}.}
+		\label{tab:pwm1}
 		\begin{tabular}{ | c | c | c| m{5.5cm} | }
-			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Ιδιότητες}}\\
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -778,8 +816,15 @@
 			\hline
 			interface & INT & 1..1 & Ο αριθμός της διεπαφής PWM \\
 			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Συσχετίσεις}}\\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}[H]
+	\begin{center}
+		\caption{Συσχετίσεις του \textit{PWM}.}
+		\label{tab:pwm2}
+		\begin{tabular}{ | c | c | c| m{5.5cm} | }
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -787,8 +832,6 @@
 			PIN\_FUNC & SuperType-Επέκταση & - &  Το στοιχείο PWM επεκτείνει το στοιχείο PIN\_FUNC \\
 			\hline
 		\end{tabular}
-		\caption{Ιδιότητες και Συσχετίσεις του \textit{PWM}.}
-		\label{tab:pwm}
 	\end{center}
 \end{table}
 
@@ -807,18 +850,24 @@
 
 \begin{table}[H]
 	\begin{center}
+		\caption{Ιδιότητες του \textit{ADC}.}
+		\label{tab:adc1}
 		\begin{tabular}{ | c | c | c| m{5.5cm} | }
-			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Ιδιότητες}}\\
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
 			\hline
 			type & STRING & 1..1 & Το όνομα της διεπαφής ADC \\
 			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Συσχετίσεις}}\\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}[H]
+	\begin{center}
+		\caption{Συσχετίσεις του \textit{ADC}.}
+		\label{tab:adc2}
+		\begin{tabular}{ | c | c | c| m{5.5cm} | }
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -826,8 +875,6 @@
 			PIN\_FUNC & SuperType-Επέκταση & - &  Το στοιχείο ADC επεκτείνει το στοιχείο PIN\_FUNC \\
 			\hline
 		\end{tabular}
-		\caption{Ιδιότητες και Συσχετίσεις του \textit{ADC}.}
-		\label{tab:adc}
 	\end{center}
 \end{table}
 
@@ -846,18 +893,24 @@
 
 \begin{table}[H]
 	\begin{center}
+		\caption{Ιδιότητες του \textit{DAC}.}
+		\label{tab:dac1}
 		\begin{tabular}{ | c | c | c| m{5.5cm} | }
-			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Ιδιότητες}}\\
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
 			\hline
 			type & STRING & 1..1 & Το όνομα της διεπαφής DAC \\
 			\hline
-			\rowcolor{Gray}
-			\multicolumn{4}{|c|}{\textbf{Συσχετίσεις}}\\
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}[H]
+	\begin{center}
+		\caption{Συσχετίσεις του \textit{DAC}.}
+		\label{tab:dac2}
+		\begin{tabular}{ | c | c | c| m{5.5cm} | }
 			\hline
 			\rowcolor{Gray}
 			Όνομα & Τύπος & Πολλαπλότητα & Περιγραφή \\
@@ -865,8 +918,6 @@
 			PIN\_FUNC & SuperType-Επέκταση & - &  Το στοιχείο DAC επεκτείνει το στοιχείο PIN\_FUNC \\
 			\hline
 		\end{tabular}
-		\caption{Ιδιότητες και Συσχετίσεις του \textit{DAC}.}
-		\label{tab:dac}
 	\end{center}
 \end{table}
 
